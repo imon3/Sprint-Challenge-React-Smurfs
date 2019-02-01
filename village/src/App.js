@@ -39,6 +39,7 @@ class App extends Component {
           render={props => <SmurfForm {...props} />}
         />
         <Route
+          exact
           path='/'
           render={props => <Smurfs {...props} smurfs={this.state.smurfs} />}
         />
