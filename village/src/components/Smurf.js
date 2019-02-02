@@ -1,8 +1,9 @@
 import React from 'react';
 
 const Smurf = props => {
+
   return (
-    <div className="Smurf">
+    <div className="Smurf" onClick={e => props.deleteSmurf(e, props.id)}>
       <h3>{props.name}</h3>
       <strong>{props.height} tall</strong>
       <p>{props.age} smurf years old</p>
